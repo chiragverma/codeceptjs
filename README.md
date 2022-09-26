@@ -1,6 +1,6 @@
 # CodeceptJS Appium tESTS
 
-This uses CodeCeptJS, Appium and Typescript
+This uses CodeceptJS, Appium and Typescript
 
 
 # To run tests locally:
