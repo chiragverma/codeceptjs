@@ -8,11 +8,11 @@ setHeadlessWhen(process.env.HEADLESS);
 
 exports.config = {
   tests: './tests/**.ts',
-  "timeout": 3000,
+  "timeout": 5000,
   output: './output',
   helpers: {
     Appium: {
-      app: '/Users/chiragverma/Desktop/codeceptjs-mobile/apps/Apps.zip',
+      app: '/Users/chiragverma/Desktop/codeceptjs/apps/Apps.zip',
       platform: 'iOS',
       device: 'iPhone 13',
       desiredCapabilities: {deviceName: "iPhone 13", platformVersion: "15.2", automationName: 'XCUITest'}
@@ -34,9 +34,6 @@ exports.config = {
     },
     screenshotOnFail: {
       enabled: true
-    },
-    "stepByStepReport": {
-      "enabled": true
     }
   }
 }
