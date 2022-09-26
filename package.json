@@ -3,7 +3,6 @@
     "version": "1.0.0",
     "main": "index.js",
     "author": "chirag verma",
-    "license": "MIT",
     "scripts": {
         "run:tests": "codeceptjs run",
         "def": "codeceptjs def",

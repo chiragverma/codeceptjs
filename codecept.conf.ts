@@ -8,31 +8,35 @@ setHeadlessWhen(process.env.HEADLESS);
 
 exports.config = {
   tests: './tests/**.ts',
+  "timeout": 3000,
   output: './output',
   helpers: {
-    Playwright: {
-      url: 'https://www.mrandmrssmith.com/',
-      show: true,
-      windowSize: '1200x800',
-      browser: 'chromium'
+    Appium: {
+      app: '/Users/chiragverma/Desktop/codeceptjs-mobile/apps/Apps.zip',
+      platform: 'iOS',
+      device: 'iPhone 13',
+      desiredCapabilities: {deviceName: "iPhone 13", platformVersion: "15.2", automationName: 'XCUITest'}
     },
     CustomHelper: {
-      require: './CustomHelper.ts'
+      require: './CustomHelper.ts'  
     }
   },
   bootstrap,
-  include: {
-    loginPage: './loginPage.ts',
-    homePage: './homePage.ts',
-    calender: './calender.ts'
-  },
+  /* include: {
+    loginPage: './pages/loginPage.ts',
+    homePage: './pages/homePage.ts'
+  }, */
   name: 'typescript-boilerplate',
   plugins: {
+    "allure": {},
     retryFailedStep: {
-      enabled: true
+      enabled: false
     },
     screenshotOnFail: {
       enabled: true
+    },
+    "stepByStepReport": {
+      "enabled": true
     }
   }
 }
