@@ -5,7 +5,6 @@ Scenario('should be able to see all the tabs', ({ I }) => {
   I.waitForElement('~Dashboard tab')
   I.waitForElement('~Settings tab')
   I.click('~Dashboard tab');
-  I.click('~Dashboard tab');
   I.waitForElement('~dashboard-title')
   I.waitForElement('~Coin-btc')
   I.waitForElement('~Coin-eth')
