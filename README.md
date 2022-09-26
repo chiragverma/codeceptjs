@@ -1,1 +1,24 @@
-# codeceptjs
+# CodeceptJS Appium tESTS
+
+This uses CodeCeptJS, Appium and Typescript
+
+
+# To run tests locally:
+
+```
+git clone https://github.com/chiragverma/codeceptjs.git
+```
+
+```
+cd codeceptjs
+```
+
+```
+npm install
+```
+
+# To run tests locally on iOS:
+
+```
+npx codeceptjs run
+```
