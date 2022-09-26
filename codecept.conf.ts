@@ -8,10 +8,10 @@ setHeadlessWhen(process.env.HEADLESS);
 
 exports.config = {
   tests: './tests/**.ts',
-  "timeout": 5000,
   output: './output',
   helpers: {
     Appium: {
+      "waitForTimeout": 5000,
       app: '/Users/chiragverma/Desktop/codeceptjs/apps/Apps.zip',
       platform: 'iOS',
       device: 'iPhone 13',
