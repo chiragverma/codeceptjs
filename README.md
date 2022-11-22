@@ -1,4 +1,4 @@
-# CodeceptJS Appium tESTS
+# CodeceptJS Appium Tests
 
 This uses CodeceptJS, Appium and Typescript
 
